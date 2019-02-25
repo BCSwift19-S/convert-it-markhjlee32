@@ -26,6 +26,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="userInputChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Pg7-wn-S99"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tps-3K-25V">
                                 <rect key="frame" x="16" y="98" width="343" height="52"/>
@@ -83,6 +86,9 @@
                                     <segment title="-"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="signSegmentSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="36r-Pw-9pA"/>
+                                </connections>
                             </segmentedControl>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJE-Ie-wdu">
                                 <rect key="frame" x="16" y="193" width="343" height="216"/>
@@ -147,6 +153,7 @@
                         <outlet property="formulaPicker" destination="jJE-Ie-wdu" id="jRn-ur-Kos"/>
                         <outlet property="fromUnitsLabel" destination="68n-7m-Z0U" id="DAS-hk-sEg"/>
                         <outlet property="resultsLabel" destination="Tps-3K-25V" id="5cr-be-ayN"/>
+                        <outlet property="signSegment" destination="0we-Wc-CgP" id="zFP-81-f8a"/>
                         <outlet property="userInput" destination="lD0-5E-SXP" id="7Mu-BN-3Ft"/>
                     </connections>
                 </viewController>
